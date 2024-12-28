@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #333;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2575fc;
+        }
+
+        section {
+            padding: 3rem 1rem;
+        }
+
+        .about, .projects, .contact {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2575fc;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: left;
+            width: 300px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            margin: 0;
+            color: #6a11cb;
+        }
+
+        .project-card p {
+            margin: 1rem 0;
+            color: #555;
+        }
+
+        .project-card a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Sandesh Kondikire, a passionate Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a skilled web developer specializing in creating responsive and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy building dynamic web applications and continuously learning new technologies.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <img src="Project-1.png" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A responsive e-commerce website using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="Project-2.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>A portfolio website built with HTML, CSS, and a touch of animation.</p>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+        <p>GitHub: <a href="#">Your GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sandesh Kondikire. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
